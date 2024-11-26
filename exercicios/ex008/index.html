@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {background-color: cornflowerblue;}
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <!--Duas maneiras de inserir negrito, sem semantica e com semantica-->
+    <p>Nesta frase temos um <b>termos em negrito</b> usando a tag B, não semantica;</p>
+    <hr>
+    <p>Nesta frase temos um <strong> termos em destaque </strong>usando a tag STRONG </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase termos um <i>termo em itálico</i> usando a tag I não semnatica </p>
+    <p>Nesta frase temos um <EM>termo em ênfase</EM> usando a tag EM </p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos também criar <mark style="background-color: blueviolet;">um texto marcado</mark> usando a tag MARK;</p>
+    <p>Neste paragrafo temos <mark> outro texto marcado </mark> porem sem o style CSS pois usei apenas para a tag1, portanto ele não herdou a stilização.</p>
+    <hr>
+    <p>Caso  queira usar o mesmo stylo para vários itens do documento,<strong>preciso ir no cabeçalho e criar um seletor para o stylo MARK, conforme linha 7 desse documento </strong>e assim todos eles ficam marcado na página, caso nenhum tag esteja com stylo inserido</p>
+    <hr>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste paragrafo;</p>
+    <h2>Texto deletado;</h2>
+    <p>Podemos marcar um <del>texto como EXCLUIDO</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido;</h2>
+    <p>Podemos marcar um <ins>texto como INSERIDO</ins> para dar enfase e indicar que ele foi adicionado depois; usamos a TAG INS </p>
+    <p>Tambem posso <u>inserir a tag U para sublinhar</u> porem é uma tag não semântica, obsoleta para o html ele apenas dá forma, neste caso usa-se no CSS;</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 ; onde quero elevar coisas para cima &uarr;</p>
+    <h2>Texto subescrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O, coisas para baixo &darr;</p>
+</body>
+</html>

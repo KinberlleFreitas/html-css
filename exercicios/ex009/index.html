@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML5</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Para criar lista ordenada uso a <strong>TAG OL</strong> para delimitar a lista e dentro dela e <strong>TAG LI</strong> para identificar item de cada lista, como exemplo abaixo;</p>
+    <ol>
+        <li>Acordar</li> <!--o </li> tornou-se opcional no HTML5 caso visualmente o desenvolvedor considere melhor -->
+        <li>Estudar Inglês</li>
+        <li>Preparar Lancheira das crianças</li>
+        <li>Tomar Café</li>
+        <li>Levar crianças para escola</li>
+        <li>Exercico Físico</li>
+        <li>Atividade Domestica</li>
+        <li>Estudar Progamação</li>
+    </ol>
+    <p>Posso personalizar a lista mudando formação da frente com numerações,  e outros com parametro <strong>TYPE</strong>.</p>
+    <ol type="A"> <!--Em type temos A, a, I, i-->
+        <li>Acordar</li>
+        <li>Estudar Inglês</li>
+        <li>Preparar Lancheira das crianças</li>
+        <li>Tomar Café</li>
+        <li>Levar crianças para escola</li>
+        <li>Exercico Físico</li>
+        <li>Atividade Domestica</li>
+        <li>Estudar Progamação</li>
+    </ol>
+    <p>Ainda dentro da tag OL posso alem de inserir parâmetro TYPE tenho o paramentro <strong>START</strong> que indica inicio da contagem, como exemplo abaixo;</p>
+    <ol type="I" start="5">
+        <li>Acordar</li>
+        <li>Estudar Inglês</li>
+        <li>Preparar Lancheira das crianças</li>
+        <li>Tomar Café</li>
+        <li>Levar crianças para escola</li>
+        <li>Exercico Físico</li>
+        <li>Atividade Domestica</li>
+        <li>Estudar Progamação</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <p>Para criar lista  não ordenada uso a <strong>TAG UL</strong> para delimitar a lista e dentro dela e <strong>TAG LI</strong> para identificar item de cada lista, como exemplo abaixo;</p>
+    <ul>
+        <li>Pao</li>
+        <li>café</li>
+        <li>Arroz</li>
+        <li>macarrao</li>
+        <li>lapis de cor para Yossef</li>
+    </ul>
+    <p>Dentro da TAG UL também podemos inserir parametros para marcador padrão usando parametro TYPE + square/circle ou disc (este é padrão) , exemplo abaixo;</p>
+    <ul type="square">
+        <li>Pao</li>
+        <li>café</li>
+        <li>Arroz</li>
+        <li>macarrao</li>
+        <li>lapis de cor para Yossef</li>
+    </ul>
+    <h2>Minhas Liguagens favoritas</h2>
+    <p>Neste exemplo aprenderemos como fazer o aninhamento;</p>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Cliper</li>
+            <li>Visual Basic</li>
+            <li>Fortram</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--o start é um parametro numerico-->
+            <li>PHP</li>
+            <li>Phyton</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+        <P>Podemos ainda misturar uma UL com uma OL, exemplo abaixo</P>
+        <h2>Meus jogos favoritos</h2>
+        <ol>
+            <li>Nitendo</li>
+            <ul type="square">
+                <li>Mario Bross</li>
+                <ul type="circle">
+                    <li>Mario Bross 3</li>
+                    <li>Mario Lost Level</li>
+                </ul>
+                <li>Ninja Guiden</li>
+            </ul>
+            <li>Super Nitendo</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donc Gong</li>
+            </ul>
+            <li>PlayStatio</li>
+            <ul type="square">
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+        </ol>
+        <h2>Lista de Definição</h2>
+        <p>Usamos para inserir TERMOS e DEFINIÇÃO deste termo, usando as TAGS DT para termo e DD para definição, é como se fosse um dicionario, veja exemplo abaixo;</p>
+        <ol>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteudo de um site.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para criação de design de um site.</dd>
+            <dt>JavaScipt</dt>
+            <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+        </ol>
+</body>
+</html>

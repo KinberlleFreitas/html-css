@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: black;
+            background-color: blueviolet;
+            width: 200px;
+        }
+        div:hover{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Prototipo de um menu</h1>
+    <p>Kids</p>
+    <div>
+       Girl
+       <p>1 - 6 years</p>
+    </div>
+    <p>Fim Exemplo</p>
+    
+</body>
+</html>

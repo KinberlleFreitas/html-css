@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Link Pseudoclasses</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: red;
+        }
+        .especial:hover{
+            color: white;
+            background-color: mediumorchid;
+            width: 200px;
+            height: 200px;
+        }
+        .especial::before{
+            content: ">>";
+            font-weight: lighter;
+        }
+        .especial::after{
+            content: "<<";
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um Link</h1>
+    <ul>
+        <li>Visite o site oficial do <a href="https://cursoemvideo.com" target="_blank" rel="next" class="especial">Curso em Video</a></li>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="next">Para aprender o HTML e CSS, acesse nosso  repositorio no github</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo/videos" target="_blank" rel="next">Para acompanhar playlist completa, acesse nosso canal no Youtube</a>
+        </li> 
+    </ul>
+    
+</body>
+</html>
