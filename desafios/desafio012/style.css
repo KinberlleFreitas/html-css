@@ -33,7 +33,7 @@ header > h1{
     padding-top: 50px;
     font-family:var(--fonte2);
     font-variant: small-caps;
-    font-size: 3em;
+    font-size: 10vw;
 }
 
 header > p {
@@ -56,13 +56,13 @@ section{
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
-}
-
-section > p {
     font-family: var(--fonte3);
-    font-size: 1.2em;
+    font-size: 3vw;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
 
 section.conteudo{
     background-color: white;
@@ -71,8 +71,9 @@ section.conteudo{
 
 
 section#imagem01{
+    background-color: rgba(0, 0, 0, 0.219);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-image: url("imagens/background001.jpg");
-    background-color: rgba(0, 0, 0, 0.336);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,17 +81,16 @@ section#imagem01{
 }
 
 section#imagem01 > p{
-    width: 230px;
-    height: 250px;
+    display: inline-block;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding:10px;
- 
 }
 
 section#imagem02{
-    background-image: url("imagens/background002.jpg");
     background-color: rgba(0, 0, 0, 0.336);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-image: url("imagens/background002.jpg");
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,8 +98,7 @@ section#imagem02{
 }
 
 section#imagem02 > p{
-    width: 230px;
-    height: 250px;
+    display: inline-block;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
