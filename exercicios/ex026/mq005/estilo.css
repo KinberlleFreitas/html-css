@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body, html {
+    background-color: rgb(216, 213, 213);
+}
+
+header{
+    background-color: gray ;
+    
+}
+
+header > h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+menu{
+    display: block;
+
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu  a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+
+a:hover{
+    display: block;
+    color:black;
+    background-color: rgb(77, 69, 69);
+
+}
+
+main{
+    background-color: white;
+}
+
+article{
+
+}
+  
