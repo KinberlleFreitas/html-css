@@ -18,13 +18,12 @@ header{
 header > h1{
     color: #180803  ;
     text-align: center;
-    padding: 10px;
-    
+    padding: 10px;   
 }
 
-i#burger{
-    background-color:  #180803 ;
-    color: #a57c65;
+i#burger {
+    background-color: #180803;
+    color: #a87d70;
     display: block;
     text-align: center;
     padding: 10px;
@@ -32,13 +31,12 @@ i#burger{
 }
 
 i#burger:hover{
-    background-color: #8f7565;
+    background-color: #592816;
     color: #180803;
+   
 }
-
 menu{
     display: none;
-
 }
 
 menu > ul{
