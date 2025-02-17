@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Controle de Tamanhos Flexiveis </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: blueviolet;
+        }
+        div.container{
+            background-color: rgb(221, 128, 240);
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: azure;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+
+            flex-basis:200px;
+        }
+
+        div#Ia{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#Ib{
+            flex-grow: 4;
+           flex-shrink: 0;
+        }
+
+        div#Ic{
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="Ia">A</div>
+        <div class="item" id="Ib">B</div>
+        <div class="item" id="Ic">C</div>
+    </div>
+    
+</body>
+</html>
