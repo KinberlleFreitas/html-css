@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia dos Items Flexbox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(202, 202, 202);
+
+        }
+
+        div.container{
+            background-color: gray;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            
+        }
+
+        div.item{
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        div#I2{
+            align-self: flex-start;
+        }
+
+        div#I3{
+            align-self: flex-end;
+        }
+
+        div#I4{
+            align-self: center;
+        }
+
+        div#I5{
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="I1">Auto</div>
+        <div class="item" id="I2">Flex-Start</div>
+        <div class="item" id="I3">Flex-End</div>
+        <div class="item" id="I4">Center</div>
+        <div class="item" id="I5">Stretch</div>
+    </div>
+</body>
+</html>
