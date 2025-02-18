@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shorthand Flex</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        div.container{
+            background-color: lightgray;
+            display: flex;
+
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+             background-color: gray;
+             border: 1px solid pink;
+             text-align: center;
+             padding: 20px;
+        }
+
+        div#CXa{
+            flex: 0 1 200px;
+        }
+
+        div#CXb{
+            flex: 2 0 100px;
+            
+        }
+
+        div#CXc{
+            flex: 1 2 auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="CXa">A</div>
+        <div class="item" id="CXb">B</div>
+        <div class="item" id="CXc">C</div>
+    </div>
+    
+</body>
+</html>
