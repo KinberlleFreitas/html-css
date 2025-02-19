@@ -12,13 +12,15 @@ body{
     background-color: #435373;
     height: 100vh;
     width: 100vw !important;
-    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+   
 }
 
 header{
     background-color: #456EBF;
     color: white ;
-    padding: 20px;
+    padding: 10px;
+   
 
     display: flex;
     flex-flow: row wrap;
@@ -32,6 +34,7 @@ header > h1{
     font-variant: small-caps;
     flex: 0 0 200px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.445);
+    
 }
 
 header > nav{
@@ -46,15 +49,11 @@ header > nav{
 header > nav > a{
     background-color: #435373 ;
     color: white;
-    
-    margin: 3px;
     padding: 10px;
+    margin: 5px;
     border-radius: 5px;
-
     text-decoration: none;
-
     text-align: center;
-   
 }
 
 header > nav > a:hover{
@@ -68,18 +67,25 @@ header > nav > a:hover{
     transition: background-color .5s;
 }
 
-main{
-    background-color:#B6C5F2;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 
-    
+i#burger{
+    display: none;
+}
+
+
+
+main{
+    width: 90vw;
+    background-color:#B6C5F2;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
 }
 
 main > h2{
-    padding: 5px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -87,4 +93,5 @@ main > p{
     text-align: justify;
     line-height: 1.5em;
     text-indent:15px ;
+    margin-bottom: 20px;
 }
